@@ -1,0 +1,20 @@
+
+<form [formGroup]="DataForms" (ngSubmit)="SaveDatas(DataForms.value)">
+    <label>
+           EmpId
+           </label>
+           <input type="text" formControlName="empId">
+    <br> <br>
+    <label>
+        EmpName
+    </label>
+    <input type="text" formControlName="empName">
+    <br> <br>
+    <label>
+        EmpDepartment
+    </label>
+    <input type="text" formControlName="empDepartment">
+    <br> <br>
+    
+    <button type="submit" class="btn">Add Data</button>
+</form>

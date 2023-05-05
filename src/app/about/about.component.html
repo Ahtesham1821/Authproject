@@ -1,0 +1,24 @@
+
+
+<div class="demo-button-container">
+   
+    
+        <button mat-raised-button  class="demo-button">
+          Add data
+        </button>
+       
+  </div>
+<table >
+    <tr>
+        <td scope="Row">EmpID</td>
+       <td scope="Row">EmpName</td>
+       <td scope="Row">EmpDepartment</td>
+    </tr>
+    <tr *ngFor="let data of data">
+        <td scope="col">{{data.empId}}</td>
+        <td scope="col">{{data.empName}}</td>
+        <td scope="col">{{data.empDepartment}}</td>
+        
+
+    </tr>
+</table>
